@@ -1,0 +1,16 @@
+.main {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-grow: 1;
+   padding: 0 15px;
+
+   &__container {
+      width: 100%;
+      max-width: 1140px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid gray;
+   }
+}

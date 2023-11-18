@@ -1,0 +1,17 @@
+.header {
+   width: 100%;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   padding: 0 15px;
+
+   &__container {
+      height: 100%;
+      width: 100%;
+      max-width: 1140px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid gray;
+   }
+}

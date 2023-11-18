@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Test jurist.by</title>
+  <link rel="stylesheet" href="./src/styles/index.scss">
+  <script type="module" src="./src/scripts/index.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container">
+        header
+        <div class="header__thumbnail">
+          <img id="user-thumbnail" src="./src/images/user-thumbnail.png" alt="#">
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+        Main
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        Footer
+      </div>
+    </footer>
+  </div>
+
+  <section class="modal">
+    <div class="modal-auth">
+      <div class="modal-auth__container">
+        <div class="modal-auth__btn-close">
+          <svg id="btn-close-modal-auth" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+            fill="none">
+            <path d="M6 6L18 18" stroke="#0F0E0E" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M18 6L6.00001 18" stroke="#0F0E0E" stroke-width="1.5" stroke-linecap="round" />
+          </svg>
+        </div>
+
+        <div class="modal-auth__tabs">
+          <input type="radio" name="tab-auth" id="login" checked>
+          <label for="login">Вход</label>
+
+          <input type="radio" name="tab-auth" id="registration">
+          <label for="registration">Регистрация</label>
+
+          <form class="form__control tab__login">
+            <div class="form__input form__email">
+              <input id="email-log" type="email" value="" placeholder="Электронная почта" required>
+              <span id="info-email-log" class="form__input_info">Электронная почта</span>
+            </div>
+
+            <div class="form__input form__password">
+              <input id="password-log" type="password" value="" placeholder="Пароль" required>
+              <span id="info-password-log" class="form__input_info">Пароль</span>
+              <span id="toggle-password-log" class="form__input_toggle"></span>
+            </div>
+
+            <span class="form-error" id="error-log"></span>
+
+            <div class="form__input btn-control-log">
+              <div class="btn-control-log__remember btn-control">
+                <input type="checkbox" id="remember">
+                <label for="remember">Запомнить меня</label>
+              </div>
+
+              <a href="#" class="btn-control-log__forgot">Забыли пароль?</a>
+            </div>
+
+            <button type="submit" class="btn-submit-log btn-submit">
+              Войти
+            </button>
+          </form>
+
+          <form class="form__control tab__registration">
+            <div class="form__input form__name">
+              <input id="name-reg" type="text" value="" placeholder="Имя" required>
+              <span id="info-name-reg" class="form__input_info">Имя</span>
+              <span class="form-error" id="name-error-reg"></span>
+            </div>
+
+            <div class="form__input form__phone">
+              <input id="phone-reg" type="tel" value="" placeholder="Телефон" required>
+              <span id="info-phone-reg" class="form__input_info">Телефон</span>
+              <span class="form-error" id="phone-error-reg"></span>
+            </div>
+
+            <div class="form__input form__email">
+              <input id="email-reg" type="email" value="" placeholder="Электронная почта" required>
+              <span id="info-email-reg" class="form__input_info">Электронная почта</span>
+              <span class="form-error" id="email-error-reg"></span>
+            </div>
+
+            <div class="form__input form__password">
+              <input id="password-reg" type="password" value="" placeholder="Пароль" required>
+              <span id="info-password-reg" class="form__input_info">Пароль</span>
+              <span id="toggle-password-reg" class="form__input_toggle"></span>
+              <span class="form-error" id="password-error-reg"></span>
+            </div>
+
+            <div class="form__input btn-control-reg">
+              <div class="btn-control-reg__confirm btn-control">
+                <input type="checkbox" id="confirm">
+                <label for="confirm">
+                  <span class="btn-control-reg__text">
+                    Я принимаю
+                    <a href="#">пользовательское соглашение</a>
+                  </span>
+                </label>
+                <span class="form-error" id="confirm-error-reg"></span>
+              </div>
+
+              <div class="btn-control-reg__accept btn-control">
+                <input type="checkbox" id="accept">
+                <label for="accept">
+                  <span class="btn-control-reg__text">
+                    Я даю свое согласие на сбор, обработку
+                    <br>и хранение моих персональных данных
+                    <br>в соответствии с
+                    <a href="#">политикой оператора</a>
+                  </span>
+                </label>
+                <span class="form-error" id="accept-error-reg"></span>
+              </div>
+            </div>
+
+            <button type="submit" class="btn-submit-reg btn-submit">
+              Зарегистрироваться
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modal-success">
+    <div class="modal-success__container">
+      <div class="modal-success__btn-close">
+        <svg id="btn-close-modal-success" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <path d="M6 6L18 18" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+          <path d="M18 6L6.00001 18" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class="modal-success__icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <path
+            d="M20 36.6667C29.1667 36.6667 36.6667 29.1667 36.6667 20C36.6667 10.8333 29.1667 3.33333 20 3.33333C10.8334 3.33333 3.33337 10.8333 3.33337 20C3.33337 29.1667 10.8334 36.6667 20 36.6667Z"
+            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M12.9166 20L17.6333 24.7167L27.0833 15.2833" stroke="white" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+
+      <p class="modal-success__title">
+        Спасибо за регистрацию!
+      </p>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
