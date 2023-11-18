@@ -41,6 +41,8 @@ export function formLogin() {
             console.log(formValues)
             modal.classList.remove('open')
             formLogin.reset()
+            inputInfoEmail.classList.remove('filled')
+            inputInfoPassword.classList.remove('filled')
          }, 1000)
       }
    }

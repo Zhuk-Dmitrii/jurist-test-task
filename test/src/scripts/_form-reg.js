@@ -11,7 +11,7 @@ export function formRegistration() {
    const inputInfoName = document.getElementById('info-name-reg')
    const inputInfoPhone = document.getElementById('info-phone-reg')
    const inputInfoEmail = document.getElementById('info-email-reg')
-   const inputInfoPassword = document.getElementById('toggle-password-reg')
+   const inputInfoPassword = document.getElementById('info-password-reg')
    const inputConfirmReg = document.getElementById('confirm')
    const inputAcceptReg = document.getElementById('accept')
    const modalAuth = document.querySelector('.modal')
@@ -87,6 +87,10 @@ export function formRegistration() {
             modalAuth.classList.remove('open')
             modalSuccess.classList.add('open')
             formRegistration.reset()
+            inputInfoName.classList.remove('filled')
+            inputInfoPhone.classList.remove('filled')
+            inputInfoEmail.classList.remove('filled')
+            inputInfoPassword.classList.remove('filled')
          }, 1000)
       }
    }
